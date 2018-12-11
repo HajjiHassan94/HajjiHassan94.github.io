@@ -1,0 +1,81 @@
+---
+output:
+  html_document: 
+    toc: true
+    toc_float: true
+---
+
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<p align="center">
+*Curriculum Vitae*
+</p>
+
+
+<p align="center">
+<font size="+2">**Statistics anad data analyst engineer**</font>
+</p>
+----
+
+<p align="justify">
+**Status:** Student at the <a href='http://www.essai.rnu.tn/accueil.htm'> Higher School of Statistics and Information Analysis</a>
+
+**Skills:** <a href='https://www.r-project.org'> </a> `R` , `Python`, Data Analysis, Quantitative Analysis, Machine Learning, financial markets
+</p>
+
+----
+
+<p align="justify">
+**Summary** A self-driven and highly motivated individual with experience in the finance industry. Special eye for quantitative analysis and gifted with immaculate problem-solving skills and analytical thinking power..
+</p>
+
+----
+
+## Education
+
+
+<p align="justify">
+
+**Since September 2015, Student, Statistical and data analysis.**
+
+* Location:  <a href='http://www.essai.rnu.tn/accueil.htm'>Higher School of Statistics and Information Analysis</a>.
+
+* Qualification: Engineer Degree in Statistics and Information Analysis
+
+* Specialty : Actuarial science
+
+
+**2013-2015, Student, Pre-engineering class. **
+
+* Location: <a href='hhttp://www.essths.rnu.tn/FR/actualites.htm'>Higher School of Science and Technology , Hammam Sousse, Tunisia</a>.
+
+* Specialty : Mathematics, Physics and Engineering Science.
+
+**2018, Student, TELETRADE. **
+
+* Qualification: Dealing on foreign exchange market , Level 3 (Expert)
+
+</p>
+
+
+## Internships
+
+<p align="justify">
+
+* Internship at the *Société Tunisienne de Banque*. My missions were : Check Discount, Updating savings accounts, Withdrawal and payment of money
+
+* Internship at the *TELETRADE*. My missions were : Technical and fundamental analysis,  Building a trading strategy based on time series modeling on the FOREX market using R 
+
+</p>
+
+## Contact 
+
+>  *email:*  <hhajji0000@gmail.com> \
+

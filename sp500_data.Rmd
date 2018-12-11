@@ -1,0 +1,65 @@
+---
+output:
+  html_document: 
+    toc: true
+    toc_float: true
+---
+
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<p align="center">
+<font size="+2">**SP 500 Data**</font>
+</p>
+
+----
+
+## Context
+
+
+<p align="justify">
+
+* Stock market data can be interesting to analyze and as a further incentive, strong predictive models can have large financial payoff. The amount of financial data on the web is seemingly endless. A large and well structured dataset on a wide array of companies can be hard to come by. Here I provide a dataset with historical stock prices (last 5 years) for all companies currently found on the S&P 500 index.
+
+* The script I used to acquire all of these .csv files can be found in the Kaggle web site In the future if you wish for a more up to date dataset, this can be used to acquire new versions of the .csv files.
+
+
+## Content
+
+<p align="justify">
+
+* The data is presented in a couple of formats to suit different individual's needs or computational limitations. I have included files containing 5 years of stock data.
+
+* The folder individual_stocks_5yr contains files of data for individual stocks, labelled by their stock ticker name. The all_stocks_5yr.csv contains the same data, presented in a merged .csv file. Depending on the intended use (graphing, modelling etc.) the user may prefer one of these given formats.
+
+* All the files have the following columns: Date - in format: yy-mm-dd
+Open - price of the stock at market open (this is NYSE data so all in USD)
+High - Highest price reached in the day
+Low Close - Lowest price reached in the day
+Volume - Number of shares traded
+Name - the stock's ticker name
+
+</p>
+
+## Inspiration
+
+* This dataset lends itself to a some very interesting visualizations. One can look at simple things like how prices change over time, graph an compare multiple stocks at once, or generate and graph new metrics from the data provided. From these data informative stock stats such as volatility and moving averages can be easily calculated. The million dollar question is: can you develop a model that can beat the market and allow you to make statistically informed trades!
+
+## General overview of the data
+
+```{r setup , include = FALSE}
+library(readr)
+all_stocks_5yr <- read_csv("all_stocks_5yr.csv")
+```
+
+```{r}
+head(all_stocks_5yr,n = 10)
+```
+
+You can download data from here : https://github.com/hassanhajji/Projects/blob/master/SP500.xlsx

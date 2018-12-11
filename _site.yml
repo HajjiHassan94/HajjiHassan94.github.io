@@ -1,0 +1,39 @@
+name: Hajji Hassan
+output_dir: '.'
+navbar:
+  title: Hajji Hassan
+  type: inverse
+  left:
+  - text: Home
+    icon: fa-home
+    href: index.html
+  - text: Projects
+    menu: 
+      - text: Operational research project
+        href: Predict+Apple+stock+prices.html
+      - text: Financial index analysis using time series
+        href: Time_series_analysis.html
+#      - text: End of year project
+#        href: https://github.com/hassanhajji/Projet-recherche-operationelle/blob/master/Rapport%20PFA.pdf
+        
+  - text: My CV
+    href: cvR.html
+  - text: Data
+    menu:
+      - text: SP500 index Data
+        href: SP500_data.html
+  right:
+  - icon: fa-envelope fa-lg
+    href: contact.html
+  - icon: fa-linkedin fa-lg
+    href: https://www.linkedin.com/in/hassan-hajji-683393108/
+  - icon: fa-facebook fa-lg
+    href: https://www.facebook.com/hajji.hassan.12
+output:
+  html_document:
+    theme: yeti
+    highlight: textmate
+    css: styles.css
+    lib_dir: site_libs
+    self_contained: no
+

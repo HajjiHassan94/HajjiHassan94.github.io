@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Hajji Hassan</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Home
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Projects
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="Predict+Apple+stock+prices.html">Operational research project</a>
+    </li>
+    <li>
+      <a href="Time_series_analysis.html">Financial index analysis using time series</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="cvR.html">My CV</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Data
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="SP500_data.html">SP500 index Data</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="contact.html">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/hassan-hajji-683393108/">
+    <span class="fa fa-linkedin fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.facebook.com/hajji.hassan.12">
+    <span class="fa fa-facebook fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<div id="presentation-of-recurrent-neural-networks" class="section level2">
+<h2>Presentation of recurrent neural networks</h2>
+<p>A <em>network of recurrent neurons</em> is a network of artificial neurons with recurrent connections, there is a cycle in the network that consists of the return of an outgoing information from a neuron as a new variable. incoming from this same neuron.</p>
+<p><img src="images/RO_1.PNG"></p>
+<p>A <em>Long Short-Term Memory (LSTM)</em> network is a network of recurrent neurons whose memory alternates between short-term and long-term. It is the architecture most used for this kind of networks, and which makes it possible to face the problem of disappearance of the gradient. Indeed, each neuron in the network is linked to two tasks: a “hidden” state and a memory state.</p>
+<p><img src="images/RO_2.PNG"></p>
+</div>
+<div id="work-approach" class="section level2">
+<h2>Work approach</h2>
+<p>This work is based on <a href="https://github.com/llSourcell/How-to-Predict-Stock-Prices-Easily-Demo" class="uri">https://github.com/llSourcell/How-to-Predict-Stock-Prices-Easily-Demo</a> and <a href="http://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/" class="uri">http://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/</a></p>
+<p>I just want to predict if a stock will rise or not based on previous information using LSTM network</p>
+<pre class="python"><code>import numpy as np # linear algebra
+import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+
+from subprocess import check_output
+from keras.layers.core import Dense, Activation, Dropout
+from keras.layers.recurrent import LSTM
+from keras.models import Sequential
+from sklearn.cross_validation import  train_test_split
+import time #helper libraries
+from sklearn.preprocessing import MinMaxScaler
+import matplotlib.pyplot as plt
+from numpy import newaxis</code></pre>
+<pre><code>Using TensorFlow backend.
+C:\Users\ordinateur\Anaconda3\lib\site-packages\sklearn\cross_validation.py:41: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  &quot;This module will be removed in 0.20.&quot;, DeprecationWarning)</code></pre>
+<pre class="python"><code>prices_dataset =  pd.read_csv(&#39;C:\\Users\ordinateur\Desktop\prices.csv&#39;, header=0)
+prices_dataset</code></pre>
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>
+851264 rows × 7 columns
+</p>
+</div>
+<p><img src="images/output_0.PNG"></p>
+<pre class="python"><code>apple = prices_dataset[prices_dataset[&#39;symbol&#39;]==&#39;AAPL&#39;]
+apple_stock_prices = apple.close.values.astype(&#39;float32&#39;)
+apple_stock_prices = apple_stock_prices.reshape(1762, 1)
+apple_stock_prices.shape</code></pre>
+<pre><code>(1762, 1)</code></pre>
+<pre class="python"><code>plt.plot(apple_stock_prices)
+plt.show()
+
+scaler = MinMaxScaler(feature_range=(0, 1))
+apple_stock_prices = scaler.fit_transform(apple_stock_prices)</code></pre>
+<p><img src="images/output_1.png"></p>
+<pre class="python"><code>train_size = int(len(apple_stock_prices) * 0.80)
+test_size = len(apple_stock_prices) - train_size
+train, test = apple_stock_prices[0:train_size,:], apple_stock_prices[train_size:len(apple_stock_prices),:]
+print(len(train), len(test))</code></pre>
+<pre><code>1409 353</code></pre>
+<pre class="python"><code>def create_dataset(dataset, look_back=1):
+    dataX, dataY = [], []
+    for i in range(len(dataset)-look_back-1):
+        a = dataset[i:(i+look_back), 0]
+        dataX.append(a)
+        dataY.append(dataset[i + look_back, 0])
+    return np.array(dataX), np.array(dataY)</code></pre>
+<pre class="python"><code>look_back = 1
+trainX, trainY = create_dataset(train, look_back)
+testX, testY = create_dataset(test, look_back)</code></pre>
+<pre class="python"><code>trainX = np.reshape(trainX, (trainX.shape[0], 1, trainX.shape[1]))
+testX = np.reshape(testX, (testX.shape[0], 1, testX.shape[1]))</code></pre>
+<pre class="python"><code>model = Sequential()
+
+model.add(LSTM(
+    input_dim=1,
+    output_dim=50,
+    return_sequences=True))
+model.add(Dropout(0.2))
+
+model.add(LSTM(
+    100,
+    return_sequences=False))
+model.add(Dropout(0.2))
+
+model.add(Dense(
+    output_dim=1))
+model.add(Activation(&#39;linear&#39;))
+
+start = time.time()
+model.compile(loss=&#39;mse&#39;, optimizer=&#39;rmsprop&#39;)
+print (&#39;compilation time : &#39;, time.time() - start)</code></pre>
+<pre><code>C:\Users\ordinateur\Anaconda3\lib\site-packages\ipykernel_launcher.py:6: UserWarning: The `input_dim` and `input_length` arguments in recurrent layers are deprecated. Use `input_shape` instead.
+  
+C:\Users\ordinateur\Anaconda3\lib\site-packages\ipykernel_launcher.py:6: UserWarning: Update your `LSTM` call to the Keras 2 API: `LSTM(return_sequences=True, input_shape=(None, 1), units=50)`
+  
+
+
+compilation time :  0.04689431190490723
+
+
+C:\Users\ordinateur\Anaconda3\lib\site-packages\ipykernel_launcher.py:15: UserWarning: Update your `Dense` call to the Keras 2 API: `Dense(units=1)`
+  from ipykernel import kernelapp as app</code></pre>
+<pre class="python"><code>model.fit(
+    trainX,
+    trainY,
+    batch_size=128,
+    nb_epoch=10,
+    validation_split=0.05)</code></pre>
+<pre><code>C:\Users\ordinateur\Anaconda3\lib\site-packages\keras\models.py:939: UserWarning: The `nb_epoch` argument in `fit` has been renamed `epochs`.
+  warnings.warn(&#39;The `nb_epoch` argument in `fit` &#39;
+
+
+Train on 1336 samples, validate on 71 samples
+Epoch 1/10
+1336/1336 [==============================] - 4s 3ms/step - loss: 0.2311 - val_loss: 0.0020
+Epoch 2/10
+1336/1336 [==============================] - 0s 99us/step - loss: 0.1247 - val_loss: 0.0214
+Epoch 3/10
+1336/1336 [==============================] - 0s 97us/step - loss: 0.0538 - val_loss: 0.0553
+Epoch 4/10
+1336/1336 [==============================] - 0s 82us/step - loss: 0.0303 - val_loss: 0.0654
+Epoch 5/10
+1336/1336 [==============================] - 0s 94us/step - loss: 0.0240 - val_loss: 0.0559
+Epoch 6/10
+1336/1336 [==============================] - 0s 122us/step - loss: 0.0183 - val_loss: 0.0341
+Epoch 7/10
+1336/1336 [==============================] - 0s 114us/step - loss: 0.0116 - val_loss: 0.0155
+Epoch 8/10
+1336/1336 [==============================] - 0s 124us/step - loss: 0.0069 - val_loss: 0.0066
+Epoch 9/10
+1336/1336 [==============================] - 0s 115us/step - loss: 0.0046 - val_loss: 0.0022
+Epoch 10/10
+1336/1336 [==============================] - 0s 116us/step - loss: 0.0037 - val_loss: 5.5833e-04
+
+
+
+
+
+&lt;keras.callbacks.History at 0x2a3d7ffdd8&gt;</code></pre>
+<pre class="python"><code>def plot_results_multiple(predicted_data, true_data,length):
+    plt.plot(scaler.inverse_transform(true_data.reshape(-1, 1))[length:])
+    plt.plot(scaler.inverse_transform(np.array(predicted_data).reshape(-1, 1))[length:])
+    plt.show()
+    
+#predict lenght consecutive values from a real one
+def predict_sequences_multiple(model, firstValue,length):
+    prediction_seqs = []
+    curr_frame = firstValue
+    
+    for i in range(length): 
+        predicted = []        
+        
+        print(model.predict(curr_frame[newaxis,:,:]))
+        predicted.append(model.predict(curr_frame[newaxis,:,:])[0,0])
+        
+        curr_frame = curr_frame[0:]
+        curr_frame = np.insert(curr_frame[0:], i+1, predicted[-1], axis=0)
+        
+        prediction_seqs.append(predicted[-1])
+        
+    return prediction_seqs
+
+predict_length=5
+predictions = predict_sequences_multiple(model, testX[0], predict_length)
+print(scaler.inverse_transform(np.array(predictions).reshape(-1, 1)))
+plot_results_multiple(predictions, testY, predict_length)</code></pre>
+<pre><code>[[ 0.07359067]]
+[[ 0.1730205]]
+[[ 0.36703554]]
+[[ 0.77842444]]
+[[ 1.72563553]]
+[[  135.304245  ]
+ [  196.13742065]
+ [  314.83969116]
+ [  566.53564453]
+ [ 1146.05847168]]</code></pre>
+<p><img src="images/output_2.png"></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

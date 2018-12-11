@@ -1,0 +1,52 @@
+---
+---
+
+<script>
+<head>
+
+
+<head>
+</script>
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+
+
+<img src="images/img.jpg" style="float: right; width:15%; border:1px solid; margin-right: 20px" align="left">
+
+
+  
+# {.tabset .tabset-fade .tabset-pills}
+
+## About me
+
+
+I'm Hajji Hassan, a statistical and data analyst engineer. I  study at the [*Ecole Supérieure de la Statistique et de l'Analyse de l'Information*](http://www.essai.rnu.tn/accueil.htm)  several mathematical and data science courses: econometrics , time series , probability , data mining, financial engineering and Computing tools for Statistics such as `R` and `Python`. 
+
+I’m especially interested in Machine Learning, Quantitative Analysis and Financial Markets.   For my work, I use every day `R`. I will be sharing, in this website, some `R` and `Python` codes where I show how you can use these softwares to solve Machine Learning, Quantitative Analysis and trading problems. Your feedback, comments and questions are very welcome. 
+
+You will also find here  my CV and some projects in `R` and `Python` . 
+
+ 
+
+So feel free to [contact me](mailto:hhajji0000@gmail.com) 
+
+
+
+---
+
+
+## Forthcoming projects 
+
+1. *End of study project : Modeling and forecasting the forex market prices using machine learning and deep learning models*.
+
+2. *Building an automated trading strategy in the METATRADER 4 platform using `MQL4`*.
+
+
+
+
+
+
+
+
+

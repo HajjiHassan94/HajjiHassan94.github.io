@@ -54,7 +54,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **2013-2015, Student, Pre-engineering class. **
 
-* Location: <a href='hhttp://www.essths.rnu.tn/FR/actualites.htm'>Higher School of Science and Technology , Hammam Sousse, Tunisia</a>.
+* Location: <a href='hhttp://www.essths.rnu.tn/FR/actualites.html'>Higher School of Science and Technology , Hammam Sousse, Tunisia</a>.
 
 * Specialty : Mathematics, Physics and Engineering Science.
 

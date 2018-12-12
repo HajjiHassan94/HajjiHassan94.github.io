@@ -55,7 +55,7 @@ Name - the stock's ticker name
 
 ```{r setup , include = FALSE}
 library(readr)
-all_stocks_5yr <- read_csv("sp500.xlsx")
+all_stocks_5yr <- read_csv("all_stocks_5yr.csv")
 ```
 
 ```{r}
